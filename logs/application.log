@@ -1,0 +1,57 @@
+2015-05-01 13:13:21,091 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
+ReactiveMongoPlugin starting...
+
+2015-05-01 13:13:21,224 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
+ReactiveMongoPlugin successfully started with db 'sellem'! Servers:
+		[localhost:27017]
+
+2015-05-01 13:13:21,273 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
+saveProduct
+
+2015-05-01 13:13:21,274 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
+saveProduct Fleming
+
+2015-05-01 13:13:21,274 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
+saveProduct BSONObjectID("55436de10100000100ebbb53")
+
+2015-05-01 13:13:30,192 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
+ReactiveMongoPlugin stops, closing connections...
+
+2015-05-01 13:13:30,675 - [INFO] - from application in ForkJoinPool-1-worker-13 
+ReactiveMongo Connections stopped. [Success(Closed)]
+
+2015-05-01 13:23:26,089 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
+ReactiveMongoPlugin starting...
+
+2015-05-01 13:23:26,121 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
+ReactiveMongoPlugin successfully started with db 'sellem'! Servers:
+		[localhost:27017]
+
+2015-05-01 13:23:26,129 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
+saveProduct
+
+2015-05-01 13:23:26,129 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
+saveProduct Fleming
+
+2015-05-01 13:23:26,130 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
+saveProduct BSONObjectID("5543703e01000001000d6930")
+
+2015-05-01 13:23:26,490 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
+ReactiveMongoPlugin stops, closing connections...
+
+2015-05-01 13:23:26,536 - [INFO] - from application in ForkJoinPool-1-worker-15 
+ReactiveMongo Connections stopped. [Success(Closed)]
+
+2015-05-01 13:24:55,343 - [INFO] - from application in ScalaTest-run-running-RegisteredUserControllerSpec 
+ReactiveMongoPlugin starting...
+
+2015-05-01 13:24:55,381 - [INFO] - from application in ScalaTest-run-running-RegisteredUserControllerSpec 
+ReactiveMongoPlugin successfully started with db 'sellem'! Servers:
+		[localhost:27017]
+
+2015-05-01 13:25:01,256 - [INFO] - from application in ScalaTest-run-running-RegisteredUserControllerSpec 
+ReactiveMongoPlugin stops, closing connections...
+
+2015-05-01 13:25:01,285 - [INFO] - from application in ForkJoinPool-1-worker-13 
+ReactiveMongo Connections stopped. [Success(Closed)]
+

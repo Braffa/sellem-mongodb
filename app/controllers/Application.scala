@@ -1,3 +1,7 @@
+/*
+ * https://github.com/amitdev/simple-rest-scala/blob/master/tutorial/index.html
+ */
+
 package controllers
 
 import play.api.libs.json._
@@ -22,4 +26,5 @@ object Application extends Controller {
       }
     )
   }
+
 }
