@@ -1,4 +1,4 @@
-name := """simple-rest-scala"""
+name := """sellem-mongodb"""
 
 version := "1.0-SNAPSHOT"
 
