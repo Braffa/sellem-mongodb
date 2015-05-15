@@ -1,0 +1,5 @@
+authorityLevel email                     firstname lastname password   telephone      userId
+99,            dave.rogers@yahoo.co.uk,  Dave,     Rogers,  password1, 01388 445566,  Braffa
+99,            george.smith@yahoo.co.uk, george,   smith,   password2, 01642 641834,  georgie
+99,            andrew.jones@yahoo.co.uk, andrew,   jones,   password3, 01642 356745,  admin
+99,            susan.smurf@yahoo.co.uk,  susan,    smurf,   password4, 01388 731258,  SUE123

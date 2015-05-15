@@ -7,7 +7,7 @@
 		revision="1.0-SNAPSHOT"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20150513094340"/>
+		date="20150515105916"/>
 	<dependencies>
 		<module organisation="org.jsoup" name="jsoup">
 			<revision name="1.7.2" status="release" pubdate="20130128003049" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jsoup.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="61">

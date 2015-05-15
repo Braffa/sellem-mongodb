@@ -2,192 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6974ad34-d27a-46a3-9f3f-72e6f6dee347" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/3dbox.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/bullet_list.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/checked.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/csstemplatesmarket.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/header_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/login.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/logo.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/menu_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/menu_bullet.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/news_icon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/read_more_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/text_box.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/welcome_box.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascript/generic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/index.scala.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/listproducts.scala.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/main.scala.html" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\app\controllers\Employee.scala" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\app\controllers\authentication\LoginController.scala" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\app\models\Book.scala" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\app\models\Employee.scala" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\app\models\authentication\Login.scala" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\resources\products" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\resolution-cache\reports\simple-rest-scala-simple-rest-scala_2.10-compile-internal.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\resolution-cache\reports\simple-rest-scala-simple-rest-scala_2.10-compile.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\resolution-cache\reports\simple-rest-scala-simple-rest-scala_2.10-docs.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\resolution-cache\reports\simple-rest-scala-simple-rest-scala_2.10-optional.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\resolution-cache\reports\simple-rest-scala-simple-rest-scala_2.10-plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\resolution-cache\reports\simple-rest-scala-simple-rest-scala_2.10-pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\resolution-cache\reports\simple-rest-scala-simple-rest-scala_2.10-provided.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\resolution-cache\reports\simple-rest-scala-simple-rest-scala_2.10-runtime-internal.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\resolution-cache\reports\simple-rest-scala-simple-rest-scala_2.10-runtime.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\resolution-cache\reports\simple-rest-scala-simple-rest-scala_2.10-scala-tool.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\resolution-cache\reports\simple-rest-scala-simple-rest-scala_2.10-sources.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\resolution-cache\reports\simple-rest-scala-simple-rest-scala_2.10-test-internal.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\resolution-cache\reports\simple-rest-scala-simple-rest-scala_2.10-test.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\resolution-cache\simple-rest-scala\simple-rest-scala_2.10\1.0-SNAPSHOT\resolved.xml.properties" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\resolution-cache\simple-rest-scala\simple-rest-scala_2.10\1.0-SNAPSHOT\resolved.xml.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Application$$anonfun$listBooks$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Application$$anonfun$saveBook$1$$anonfun$apply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Application$$anonfun$saveBook$1$$anonfun$apply$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Application$$anonfun$saveBook$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Employee$$anonfun$deleteEmployee$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Employee$$anonfun$deleteEmployeeByName$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Employee$$anonfun$findEmployee$1$$anonfun$apply$4$$anonfun$apply$5.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Employee$$anonfun$findEmployee$1$$anonfun$apply$4.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Employee$$anonfun$findEmployee$1$$anonfun$apply$6.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Employee$$anonfun$findEmployee$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Employee$$anonfun$listMyEmployees$1$$anonfun$apply$1$$anonfun$apply$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Employee$$anonfun$listMyEmployees$1$$anonfun$apply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Employee$$anonfun$listMyEmployees$1$$anonfun$apply$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Employee$$anonfun$listMyEmployees$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Employee$$anonfun$saveEmployee$1$$anonfun$apply$7.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Employee$$anonfun$saveEmployee$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Employee$.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\Employee.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\LoginController$$anonfun$listLogins$1$$anonfun$apply$5.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\LoginController$$anonfun$listLogins$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\LoginController$$anonfun$saveLogin$1$$anonfun$apply$1$$anonfun$applyOrElse$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\LoginController$$anonfun$saveLogin$1$$anonfun$apply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\LoginController$$anonfun$saveLogin$1$$anonfun$apply$2$$anonfun$apply$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\LoginController$$anonfun$saveLogin$1$$anonfun$apply$2$$anonfun$apply$4.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\LoginController$$anonfun$saveLogin$1$$anonfun$apply$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\LoginController$$anonfun$saveLogin$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\LoginController$.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\LoginController.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\RegisteredUserController$$anonfun$findRegisteredUser$1$$anonfun$apply$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\RegisteredUserController$$anonfun$findRegisteredUser$1$$anonfun$apply$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\RegisteredUserController$$anonfun$findRegisteredUser$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\RegisteredUserController$$anonfun$listRegisteredUsers$1$$anonfun$apply$7.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\RegisteredUserController$$anonfun$listRegisteredUsers$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\RegisteredUserController$$anonfun$saveRegisteredUser$1$$anonfun$apply$1$$anonfun$applyOrElse$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\RegisteredUserController$$anonfun$saveRegisteredUser$1$$anonfun$apply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\RegisteredUserController$$anonfun$saveRegisteredUser$1$$anonfun$apply$4$$anonfun$apply$5.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\RegisteredUserController$$anonfun$saveRegisteredUser$1$$anonfun$apply$4$$anonfun$apply$6.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\RegisteredUserController$$anonfun$saveRegisteredUser$1$$anonfun$apply$4.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\RegisteredUserController$$anonfun$saveRegisteredUser$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\RegisteredUserController$.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\authentication\RegisteredUserController.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\product\ProductController$$anonfun$findProduct$1$$anonfun$apply$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\product\ProductController$$anonfun$findProduct$1$$anonfun$apply$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\product\ProductController$$anonfun$findProduct$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\product\ProductController$$anonfun$listProducts$1$$anonfun$apply$4.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\product\ProductController$$anonfun$listProducts$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\product\ProductController$$anonfun$saveProduct$1$$anonfun$apply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\product\ProductController$$anonfun$saveProduct$1$$anonfun$apply$5.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\product\ProductController$$anonfun$saveProduct$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\product\ProductController$.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\controllers\product\ProductController.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\Book$$anonfun$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\Book$$anonfun$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\Book$.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\Book$Book$.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\Book$Book.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\Book.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\Employee$.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\Employee.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\JsonFormats$$anonfun$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\JsonFormats$$anonfun$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\JsonFormats$.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\JsonFormats.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\authentication\JsonFormats$$anonfun$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\authentication\JsonFormats$$anonfun$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\authentication\JsonFormats$.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\authentication\JsonFormats.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\authentication\Login$.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\classes\models\authentication\Login.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\controllers\authentication\RegisteredUserControllerSpec$$anonfun$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\controllers\authentication\RegisteredUserControllerSpec$$anonfun$2$$anon$1$delayedInit$body.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\controllers\authentication\RegisteredUserControllerSpec$$anonfun$2$$anon$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\controllers\authentication\RegisteredUserControllerSpec$$anonfun$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\controllers\authentication\RegisteredUserControllerSpec.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\controllers\product\ProductControllerSpec$$anonfun$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\controllers\product\ProductControllerSpec$$anonfun$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\controllers\product\ProductControllerSpec$$anonfun$3$$anon$1$delayedInit$body.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\controllers\product\ProductControllerSpec$$anonfun$3$$anon$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\controllers\product\ProductControllerSpec$$anonfun$3.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\controllers\product\ProductControllerSpec.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\product\products" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\resources\product\products" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\setuptestdata\ProductTestData$$anonfun$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\setuptestdata\ProductTestData$$anonfun$2$$anonfun$apply$1.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\setuptestdata\ProductTestData$$anonfun$2.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\setuptestdata\ProductTestData$.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\setuptestdata\ProductTestData$delayedInit$body.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\scala-2.10\test-classes\setuptestdata\ProductTestData.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\streams\test\externalDependencyClasspath\$global\streams\export" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\streams\test\managedClasspath\$global\streams\export" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\streams\test\unmanagedClasspath\$global\streams\export" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\target\streams\test\unmanagedJars\$global\streams\export" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\test\setuptestdata\ProductTestData.scala" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\app\controllers\authentication\RegisteredUserController.scala" afterPath="$PROJECT_DIR$/app/controllers/AuthenticationController.scala" />
-      <change type="MOVED" beforePath="C:\Users\david.a.brayfield\workspace\play2\sellem-mongodb\app\controllers\product\ProductController.scala" afterPath="$PROJECT_DIR$/app/controllers/ProductController.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/controllers/Application$.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/controllers/Application$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/controllers/Application.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/controllers/Application.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/models/product/Product.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/models/product/Product.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/models/product/ProductJsonFormats$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/models/product/ProductJsonFormats$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/models/product/ProductJsonFormats$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/models/product/ProductJsonFormats$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/models/product/ProductJsonFormats$.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/models/product/ProductJsonFormats$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/models/authentication/RegisteredUser.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/models/authentication/RegisteredUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/models/authentication/RegisteredUserJsonFormats$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/models/authentication/RegisteredUserJsonFormats$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/models/authentication/RegisteredUserJsonFormats$$anonfun$2.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/models/authentication/RegisteredUserJsonFormats$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/models/authentication/RegisteredUserJsonFormats$.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/models/authentication/RegisteredUserJsonFormats$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/models/product/UserToProduct.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/models/product/UserToProduct.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/inputs" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/inputs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/inputs" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/inputs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/output" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/output" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Application.scala" afterPath="$PROJECT_DIR$/app/controllers/Application.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/product/Product.scala" afterPath="$PROJECT_DIR$/app/models/product/Product.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/authentication/RegisteredUser.scala" afterPath="$PROJECT_DIR$/app/models/authentication/RegisteredUser.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/activator.properties" afterPath="$PROJECT_DIR$/activator.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/application.log" afterPath="$PROJECT_DIR$/logs/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-compile-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-compile.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-compile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-docs.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-docs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-optional.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-optional.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-plugin.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-pom.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-provided.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-provided.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-runtime-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-runtime.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-runtime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-scala-tool.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-scala-tool.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-sources.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-sources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-test-internal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-test.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-sellem-mongodb-build-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/ivyConfiguration/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/compile/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/compile/compile/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/ivyConfiguration/$global/streams/out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/plugins.sbt" afterPath="$PROJECT_DIR$/project/plugins.sbt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/sellem-mongodb-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/sellem-mongodb-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/sellem-mongodb/sellem-mongodb_2.10/1.0-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/sellem-mongodb/sellem-mongodb_2.10/1.0-SNAPSHOT/resolved.xml.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/sellem-mongodb-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/sellem-mongodb-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/sellem-mongodb/sellem-mongodb_2.10/1.0-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/sellem-mongodb/sellem-mongodb_2.10/1.0-SNAPSHOT/resolved.xml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/root.iml" afterPath="$PROJECT_DIR$/.idea/modules/root.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/scala-2.10/classes/routes" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/routes" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/sellem-mongodb-sellem-mongodb_2.10-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/sellem-mongodb-sellem-mongodb_2.10-compile-internal.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/sellem-mongodb-sellem-mongodb_2.10-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/sellem-mongodb-sellem-mongodb_2.10-compile.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/sellem-mongodb-sellem-mongodb_2.10-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/sellem-mongodb-sellem-mongodb_2.10-docs.xml" />
@@ -201,7 +23,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/sellem-mongodb-sellem-mongodb_2.10-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/sellem-mongodb-sellem-mongodb_2.10-sources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/sellem-mongodb-sellem-mongodb_2.10-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/sellem-mongodb-sellem-mongodb_2.10-test-internal.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/sellem-mongodb-sellem-mongodb_2.10-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/sellem-mongodb-sellem-mongodb_2.10-test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="simple-rest-scala.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -228,23 +49,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AuthenticationController.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/AuthenticationController.scala">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.6470585" vertical-offset="435" max-vertical-offset="3321">
-              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-              <folding>
-                <element signature="e#21#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductController.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ProductController.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13466334" vertical-offset="0" max-vertical-offset="3267">
-              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="849">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -315,6 +124,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -333,10 +144,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple-rest-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sellem-mongodb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,7 +172,7 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sellem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
@@ -724,8 +547,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1032" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1032" extended-state="1" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -786,11 +609,26 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/controllers/AuthenticationController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="729" max-vertical-offset="3321">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ProductController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/conf/routes">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="621" max-vertical-offset="891">
           <caret line="23" column="84" selection-start-line="23" selection-start-column="84" selection-end-line="23" selection-end-column="84" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,7 +650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="810">
           <caret line="18" column="29" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -890,13 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
           <caret line="0" column="114" selection-start-line="0" selection-start-column="114" selection-end-line="0" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1007,7 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="621">
           <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,7 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1566">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,7 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8302583" vertical-offset="162" max-vertical-offset="1431">
           <caret line="31" column="16" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,10 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="5387" max-vertical-offset="14445">
           <caret line="235" column="18" selection-start-line="235" selection-start-column="18" selection-end-line="235" selection-end-column="18" />
-          <folding>
-            <element signature="e#10180#10181#0" expanded="false" />
-            <element signature="e#10263#10264#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1042,7 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7632509" vertical-offset="0" max-vertical-offset="1107">
           <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1050,9 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.63486457" vertical-offset="1" max-vertical-offset="1323">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="36" selection-end-column="3" />
-          <folding>
-            <element signature="e#24#53#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1060,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="783">
           <caret line="13" column="78" selection-start-line="13" selection-start-column="78" selection-end-line="13" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,24 +886,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09540636" vertical-offset="0" max-vertical-offset="849">
           <caret line="3" column="42" selection-start-line="2" selection-start-column="3" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ProductController.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="3267">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/AuthenticationController.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.6470585" vertical-offset="435" max-vertical-offset="3321">
+        <state vertical-scroll-proportion="0.0" vertical-offset="729" max-vertical-offset="3321">
           <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding>
-            <element signature="e#21#50#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ProductController.scala">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13466334" vertical-offset="0" max-vertical-offset="3267">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="849">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
