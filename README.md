@@ -1,8 +1,26 @@
-<<<<<<< HEAD
-Simple REST API in Play
------------------------
+ sellem-mongodb
 
-An activator [template](https://typesafe.com/activator/templates) for implementing Json based [REST API](https://www.playframework.com/documentation/2.3.x/ScalaJsonHttp).
-=======
-# sellem-mongodb
->>>>>>> 927700656d70742f2cfc830529fddd7bdb47ea11
+Web service to create/replace/update and delete objects
+on mongo database collections product and registered users.
+
+show dbs
+use sellem
+show collections
+db.product.find()
+db.product.drop()
+
+to set up mongo database
+from command line
+1. start mongo d
+2. in sepeate command prompt
+    use sellem
+    db.product.drop()
+    db.registeredusers.drop()
+3. sbt run project
+     sbt "run 9010" (from project folder)
+4. from browser
+      localhost:9010/registeredUserreloadtestdata
+      localhost:9010/productreloadtestdata
+
+
+
