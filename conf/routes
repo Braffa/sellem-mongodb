@@ -19,5 +19,7 @@ GET      /listJsonProducts                controllers.ProductController.listJson
 GET      /findproduct                     controllers.ProductController.findProduct(attribute: String, filter: String)
 GET      /productreloadtestdata           controllers.ProductController.reloadTestData
 
+GET      /reloadusertoproducttestdata     controllers.UserToProductController.reloadUserToProductTestData
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file                     controllers.Assets.versioned(path="/public", file)
