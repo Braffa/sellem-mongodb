@@ -1,57 +1,91 @@
-2015-05-01 13:13:21,091 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
+2015-05-13 10:06:56,208 - [INFO] - from play in pool-4-thread-2 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9010
+
+2015-05-13 10:07:34,523 - [ERROR] - from application in New I/O worker #1 
+
+
+! @6m5p96h6i - Internal server error, for (GET) [/listJsonProducts] ->
+
+play.PlayExceptions$CompilationException: Compilation error[reference to Logger is ambiguous;
+it is imported twice in the same scope by
+import play.api.Logger
+and import play.Logger]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:235) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$play$PlayReloader$$anon$$taskFailureHandler$1.apply(PlayReloader.scala:230) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1.play$PlayReloader$$anon$$taskFailureHandler(PlayReloader.scala:230) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at play.PlayReloader$$anon$1$$anonfun$reload$2.apply(PlayReloader.scala:90) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library.jar:na]
+	at play.PlayReloader$$anon$1.reload(PlayReloader.scala:90) ~[na:na]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:122) ~[play_2.10-2.3.7.jar:2.3.7]
+	at play.core.ReloadableApplication$$anonfun$get$1.apply(ApplicationProvider.scala:120) ~[play_2.10-2.3.7.jar:2.3.7]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library.jar:na]
+
+2015-05-13 10:07:34,632 - [WARN] - from play in New I/O worker #1 
+No application found at invoker init
+
+2015-05-13 10:08:32,923 - [INFO] - from application in play-internal-execution-context-1 
 ReactiveMongoPlugin starting...
 
-2015-05-01 13:13:21,224 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
+2015-05-13 10:08:32,931 - [INFO] - from application in play-internal-execution-context-1 
 ReactiveMongoPlugin successfully started with db 'sellem'! Servers:
 		[localhost:27017]
 
-2015-05-01 13:13:21,273 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
-saveProduct
+2015-05-13 10:08:32,967 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+listJsonProducts 
 
-2015-05-01 13:13:21,274 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
-saveProduct Fleming
+2015-05-13 10:08:42,590 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+listJsonRegisteredUsers
 
-2015-05-01 13:13:21,274 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
-saveProduct BSONObjectID("55436de10100000100ebbb53")
+2015-05-13 10:08:52,968 - [INFO] - from application in play-akka.actor.default-dispatcher-4 
+listJsonProducts 
 
-2015-05-01 13:13:30,192 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
-ReactiveMongoPlugin stops, closing connections...
+2015-05-13 10:08:58,336 - [INFO] - from application in play-akka.actor.default-dispatcher-4 
+listJsonRegisteredUsers
 
-2015-05-01 13:13:30,675 - [INFO] - from application in ForkJoinPool-1-worker-13 
-ReactiveMongo Connections stopped. [Success(Closed)]
+2015-05-13 10:09:31,606 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+AuthenticationController login userId = SUE123
 
-2015-05-01 13:23:26,089 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
-ReactiveMongoPlugin starting...
+2015-05-13 10:09:31,619 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+json [{"_id":{"$oid":"5553005351737b330044892d"},"authorityLevel":"99","email":"susan.smurf@yahoo.co.uk","firstName":"susan","lastName":"smurf","password":"password4","telephone":"01388 731258","userId":"SUE123","crDate":1431502931687,"updDate":1431502931687},{"_id":{"$oid":"55530f7b51737b3300984b0b"},"authorityLevel":"99","email":"susan.smurf@yahoo.co.uk","firstName":"susan","lastName":"smurf","password":"password4","telephone":"01388 731258","userId":"SUE123","crDate":1431506811150,"updDate":1431506811150}]
 
-2015-05-01 13:23:26,121 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
-ReactiveMongoPlugin successfully started with db 'sellem'! Servers:
-		[localhost:27017]
+2015-05-13 10:09:31,642 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+listJsonProducts 
 
-2015-05-01 13:23:26,129 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
-saveProduct
+2015-05-13 10:13:11,199 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+AuthenticationController login userId = SUE123
 
-2015-05-01 13:23:26,129 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
-saveProduct Fleming
+2015-05-13 10:13:11,205 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+json [{"_id":{"$oid":"5553005351737b330044892d"},"authorityLevel":"99","email":"susan.smurf@yahoo.co.uk","firstName":"susan","lastName":"smurf","password":"password4","telephone":"01388 731258","userId":"SUE123","crDate":1431502931687,"updDate":1431502931687},{"_id":{"$oid":"55530f7b51737b3300984b0b"},"authorityLevel":"99","email":"susan.smurf@yahoo.co.uk","firstName":"susan","lastName":"smurf","password":"password4","telephone":"01388 731258","userId":"SUE123","crDate":1431506811150,"updDate":1431506811150}]
 
-2015-05-01 13:23:26,130 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
-saveProduct BSONObjectID("5543703e01000001000d6930")
+2015-05-13 10:13:11,232 - [INFO] - from application in play-akka.actor.default-dispatcher-7 
+listJsonProducts 
 
-2015-05-01 13:23:26,490 - [INFO] - from application in ScalaTest-run-running-ProductControllerSpec 
-ReactiveMongoPlugin stops, closing connections...
+2015-05-13 10:15:06,057 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+AuthenticationController login userId = SUE123
 
-2015-05-01 13:23:26,536 - [INFO] - from application in ForkJoinPool-1-worker-15 
-ReactiveMongo Connections stopped. [Success(Closed)]
+2015-05-13 10:15:06,062 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+json [{"_id":{"$oid":"5553005351737b330044892d"},"authorityLevel":"99","email":"susan.smurf@yahoo.co.uk","firstName":"susan","lastName":"smurf","password":"password4","telephone":"01388 731258","userId":"SUE123","crDate":1431502931687,"updDate":1431502931687},{"_id":{"$oid":"55530f7b51737b3300984b0b"},"authorityLevel":"99","email":"susan.smurf@yahoo.co.uk","firstName":"susan","lastName":"smurf","password":"password4","telephone":"01388 731258","userId":"SUE123","crDate":1431506811150,"updDate":1431506811150}]
 
-2015-05-01 13:24:55,343 - [INFO] - from application in ScalaTest-run-running-RegisteredUserControllerSpec 
-ReactiveMongoPlugin starting...
+2015-05-13 10:15:06,089 - [INFO] - from application in play-akka.actor.default-dispatcher-8 
+listJsonProducts 
 
-2015-05-01 13:24:55,381 - [INFO] - from application in ScalaTest-run-running-RegisteredUserControllerSpec 
-ReactiveMongoPlugin successfully started with db 'sellem'! Servers:
-		[localhost:27017]
+2015-05-13 11:59:25,752 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+AuthenticationController login userId = SUE123
 
-2015-05-01 13:25:01,256 - [INFO] - from application in ScalaTest-run-running-RegisteredUserControllerSpec 
-ReactiveMongoPlugin stops, closing connections...
+2015-05-13 11:59:25,756 - [INFO] - from application in play-akka.actor.default-dispatcher-5 
+json [{"_id":{"$oid":"5553005351737b330044892d"},"authorityLevel":"99","email":"susan.smurf@yahoo.co.uk","firstName":"susan","lastName":"smurf","password":"password4","telephone":"01388 731258","userId":"SUE123","crDate":1431502931687,"updDate":1431502931687},{"_id":{"$oid":"55530f7b51737b3300984b0b"},"authorityLevel":"99","email":"susan.smurf@yahoo.co.uk","firstName":"susan","lastName":"smurf","password":"password4","telephone":"01388 731258","userId":"SUE123","crDate":1431506811150,"updDate":1431506811150}]
 
-2015-05-01 13:25:01,285 - [INFO] - from application in ForkJoinPool-1-worker-13 
-ReactiveMongo Connections stopped. [Success(Closed)]
+2015-05-13 11:59:25,790 - [INFO] - from application in play-akka.actor.default-dispatcher-9 
+listJsonProducts 
 

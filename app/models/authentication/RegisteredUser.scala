@@ -14,7 +14,21 @@ case class RegisteredUser (_id: BSONObjectID,
                    telephone: String, 
                    userId: String,
                    crDate: DateTime,
-                   updDate: DateTime)
+                   updDate: DateTime) {
+  override def toString: String = {
+    var p = "Product \n[BSONObjectID  - " + BSONObjectID
+    p += "\n authorityLevel - " + authorityLevel
+    p += "\n email          - " + email
+    p += "\n firstName      - " + firstName
+    p += "\n lastName       - " + lastName
+    p += "\n password       - " + password
+    p += "\n telephone      - " + telephone
+    p += "\n userId         - " + userId
+    p += "\n crDate         - " + crDate
+    p += "\n updDate        - " + updDate + "\n]"
+    p
+  }
+}
                    
 object RegisteredUserJsonFormats {
   import play.api.libs.json.Json

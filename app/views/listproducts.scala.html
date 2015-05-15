@@ -1,0 +1,18 @@
+@(message: String)(products:List[models.product.Product])
+
+@main("Sell My Things") {
+    <div class="features">
+        @for(product <- products) {
+            <div class="product_box">
+                <div class="product_icon"><img  src="@product.imageURL"></div>
+                <div class="product_content">
+                    <div class="product_details">
+                        <p>@product.author</p>
+                        <p>@product.title</p>
+                        <p>@product.productId</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

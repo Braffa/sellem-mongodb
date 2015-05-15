@@ -1,30 +1,14 @@
-/*
- * https://github.com/amitdev/simple-rest-scala/blob/master/tutorial/index.html
- */
-
 package controllers
 
-import play.api.libs.json._
+/**
+ * Created by david.a.brayfield on 13/05/2015.
+ */
 import play.api.mvc._
-import models.Book._
 
 object Application extends Controller {
 
-  def listBooks = Action {
-    Ok(Json.toJson(books))
-  }
-
-  def saveBook = Action(BodyParsers.parse.json) { request =>
-    val b = request.body.validate[Book]
-    b.fold(
-      errors => {
-        BadRequest(Json.obj("status" -> "OK", "message" -> JsError.toFlatJson(errors)))
-      },
-      book => {
-        addBook(book)
-        Ok(Json.obj("status" -> "OK"))
-      }
-    )
+  def home = Action {
+    Ok(views.html.index("Home"))
   }
 
 }

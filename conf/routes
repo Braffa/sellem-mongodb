@@ -3,25 +3,21 @@
 # ~~~~
 
 # Home page
-GET      /books                           controllers.Application.listBooks
-POST     /books                           controllers.Application.saveBook
+GET      /                                controllers.Application.home
+GET      /home                            controllers.Application.home
 
-GET      /employee                        controllers.Employee.listMyEmployees
-GET      /find                            controllers.Employee.findEmployee
-GET      /save                            controllers.Employee.saveEmployee
-GET      /delete                          controllers.Employee.deleteEmployee
-GET      /deletebyname                    controllers.Employee.deleteEmployeeByName
+GET      /login                           controllers.AuthenticationController.login(userId: String)
+GET		 /saveregisteredUser			  controllers.AuthenticationController.saveRegisteredUser
+GET		 /listregisteredUsers			  controllers.AuthenticationController.listRegisteredUsers
+GET		 /listJsonregisteredUsers		  controllers.AuthenticationController.listJsonRegisteredUsers
+GET		 /findregistereduser			  controllers.AuthenticationController.findRegisteredUser(attribute: String, filter: String)
+GET      /registeredUserreloadtestdata    controllers.AuthenticationController.reloadTestData
 
-GET		 /savelogin						  controllers.authentication.LoginController.saveLogin		 
-GET		 /listlogins					  controllers.authentication.LoginController.listLogins	
-
-GET		 /saveregisteredUser			  controllers.authentication.RegisteredUserController.saveRegisteredUser	
-GET		 /listregisteredUsers			  controllers.authentication.RegisteredUserController.listRegisteredUsers	
-GET		 /findregistereduser			  controllers.authentication.RegisteredUserController.findRegisteredUser(attribute: String, filter: String)	
-
-GET      /saveproduct                     controllers.product.ProductController.saveProduct
-GET      /listproducts                    controllers.product.ProductController.listProducts
-GET      /findproduct                     controllers.product.ProductController.findProduct(attribute: String, filter: String)
+GET      /saveproduct                     controllers.ProductController.saveProduct
+GET      /listproducts                    controllers.ProductController.listProducts
+GET      /listJsonProducts                controllers.ProductController.listJsonProducts
+GET      /findproduct                     controllers.ProductController.findProduct(attribute: String, filter: String)
+GET      /productreloadtestdata           controllers.ProductController.reloadTestData
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.versioned(path="/public", file)
+GET     /assets/*file                     controllers.Assets.versioned(path="/public", file)
