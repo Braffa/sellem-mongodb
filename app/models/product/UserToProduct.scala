@@ -11,7 +11,19 @@ case class UserToProduct (_id: BSONObjectID,
                      productIndex: String,
                      userId: String,
                      crDate: DateTime,
-                     updDate: DateTime)
+                     updDate: DateTime) {
+
+  override def toString: String = {
+    var p = "UserToProduct \n["
+    p += "BSONObjectID    - " + BSONObjectID
+    p += "\n productId    - " + productId
+    p += "\n productIndex - " + productIndex
+    p += "\n userId       - " + userId
+    p += "\n crDate       - " + crDate
+    p += "\n updDate      - " + updDate + "\n]"
+    p
+  }
+}
 
 object UserToProductJsonFormats {
   import play.api.libs.json.Json
