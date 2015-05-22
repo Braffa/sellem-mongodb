@@ -5,11 +5,12 @@ import models.product.ProductJsonFormats.productFormat
 import org.joda.time.DateTime
 import play.api.Logger
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
-import play.api.libs.json.Json
+import play.api.libs.json.{JsObject, Json}
 import play.api.mvc.{Action, Controller}
 import play.modules.reactivemongo.MongoController
 import play.modules.reactivemongo.json.collection.JSONCollection
-import reactivemongo.bson.BSONObjectID
+import play.modules.reactivemongo.json._
+import reactivemongo.bson.{BSONRegex, BSONDocument, BSONObjectID}
 
 import scala.concurrent.Future
 import scala.io.Source
@@ -66,6 +67,26 @@ object ProductController  extends Controller with MongoController {
     }
   }
 
+  def searchCatalogue (author: String, title: String, productID: String, manufacturer: String)
+    =  Action.async {
+    Logger.info("ProductController  searchCatalogue author = " + author)
+    Logger.info("ProductController  searchCatalogue title = " + title)
+    Logger.info("ProductController  searchCatalogue productID = " + productID)
+    Logger.info("ProductController  searchCatalogue manufacturer = " + manufacturer)
+
+
+
+    val searchquery = Json.obj("author" -> Json.obj("$regex" -> s".*$author.*","$options"->"i"))
+
+    val products: Future[List[Product]] =
+      productCollection.find(searchquery).cursor[Product].collect[List]()
+
+    products.map { result =>
+      println(Json.toJson(result))
+      Ok(Json.toJson(result))
+    }
+  }
+
   def saveProduct = Action {
     Logger.info("saveProduct")
     val product = setUpProduct
@@ -84,6 +105,7 @@ object ProductController  extends Controller with MongoController {
 
   def reloadTestData = {
     Logger.info("reloadTestData")
+    productCollection.drop()
     val src = Source.fromFile(".\\resources\\products.txt").getLines
     val headerLine = src.take(1).next
     for(l <- src) {
@@ -112,4 +134,5 @@ object ProductController  extends Controller with MongoController {
     }
     listProducts
   }
+
 }

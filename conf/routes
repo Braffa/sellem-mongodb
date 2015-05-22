@@ -16,6 +16,9 @@ GET      /registeredUserreloadtestdata    controllers.AuthenticationController.r
 GET      /saveproduct                     controllers.ProductController.saveProduct
 GET      /listproducts                    controllers.ProductController.listProducts
 GET      /listJsonProducts                controllers.ProductController.listJsonProducts
+
+GET      /searchCatalogue                controllers.ProductController.searchCatalogue(author: String, title: String, productID: String, manufacturer: String)
+
 GET      /findproduct                     controllers.ProductController.findProduct(attribute: String, filter: String)
 GET      /productreloadtestdata           controllers.ProductController.reloadTestData
 

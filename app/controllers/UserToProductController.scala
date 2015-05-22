@@ -30,6 +30,7 @@ object UserToProductController  extends Controller with MongoController {
 
   def reloadUserToProductTestData = {
     Logger.info("reloadUserToProductTestData")
+    userToProductCollection.drop()
     val src = Source.fromFile(".\\resources\\usertoproducts.txt").getLines
     val headerLine = src.take(1).next
     for(l <- src) {

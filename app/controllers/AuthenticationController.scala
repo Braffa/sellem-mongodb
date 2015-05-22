@@ -21,7 +21,10 @@ object AuthenticationController extends Controller with MongoController {
 
   def login (userId: String) = Action.async {
     Logger.info("AuthenticationController login userId = " + userId)
-    val logins: Future[List[RegisteredUser]] = collection.find(Json.obj("userId" -> userId)).cursor[RegisteredUser].collect[List]()
+
+    val logins: Future[List[RegisteredUser]]
+      = collection.find(Json.obj("userId" -> userId)).cursor[RegisteredUser].collect[List]()
+
     logins.map { result =>
       val json = Json.toJson(result)
       Logger.info("json " + json)
@@ -90,6 +93,7 @@ object AuthenticationController extends Controller with MongoController {
 
   def reloadTestData = {
     Logger.info("reloadTestData")
+    collection.drop()
     val src = Source.fromFile(".\\resources\\registeredUsers.txt").getLines
     val headerLine = src.take(1).next
     for(l <- src) {
