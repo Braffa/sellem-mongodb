@@ -1,0 +1,5 @@
+productId,      productIndex, userId
+978098056856 ,  0,            Braffa
+9781861005618,  0,            Braffa
+9781849386685,  0,            georgie
+9780789724410,  0,            georgie
