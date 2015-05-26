@@ -12,6 +12,7 @@ import play.modules.reactivemongo.json.collection.JSONCollection
 import play.modules.reactivemongo.json._
 import reactivemongo.bson.{BSONRegex, BSONDocument, BSONObjectID}
 
+import scala.collection.mutable
 import scala.concurrent.Future
 import scala.io.Source
 
@@ -67,19 +68,42 @@ object ProductController  extends Controller with MongoController {
     }
   }
 
-  def searchCatalogue (author: String, title: String, productID: String, manufacturer: String)
+  def searchCatalogue (author: String, title: String, productId: String, manufacturer: String)
     =  Action.async {
-    Logger.info("ProductController  searchCatalogue author = " + author)
-    Logger.info("ProductController  searchCatalogue title = " + title)
-    Logger.info("ProductController  searchCatalogue productID = " + productID)
-    Logger.info("ProductController  searchCatalogue manufacturer = " + manufacturer)
-
-
-
-    val searchquery = Json.obj("author" -> Json.obj("$regex" -> s".*$author.*","$options"->"i"))
-
+    Logger.info("ProductController  searchCatalogue")
+    var index = 0
+    var parameterMap : mutable.Map[String, String] = mutable.Map()
+    if (author.length > 0 ) {
+      parameterMap += ("author" -> author)
+      index += 1
+    }
+    if (title.length > 0 ) {
+      parameterMap += ("title" -> title)
+      index += 1
+    }
+    if (productId.length > 0) {
+      parameterMap += ("productId" -> productId)
+      index += 1
+    }
+    if (manufacturer.length > 0) {
+      parameterMap += ("manufacturer" -> manufacturer)
+    }
+    val dq = """ """"
+    var jsonString = "{"
+    index = 0
+    parameterMap.keys.foreach{ i =>
+      Logger.info( "Key = " + i + " Value = " + parameterMap(i))
+      jsonString = jsonString  + dq + i + """" : {"$regex" : ".*""" + parameterMap(i) + """.*","$options" : "i" }"""
+      index += 1
+      if (parameterMap.size > 1 && index < parameterMap.size) {
+        jsonString = jsonString + " , "
+      }
+    }
+    jsonString = jsonString + "}"
+    Logger.info(jsonString)
+    val json = play.api.libs.json.Json.parse(jsonString)
     val products: Future[List[Product]] =
-      productCollection.find(searchquery).cursor[Product].collect[List]()
+      productCollection.find(json).cursor[Product].collect[List]()
 
     products.map { result =>
       println(Json.toJson(result))
