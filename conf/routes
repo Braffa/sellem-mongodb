@@ -17,7 +17,7 @@ GET      /saveproduct                     controllers.ProductController.saveProd
 GET      /listproducts                    controllers.ProductController.listProducts
 GET      /listJsonProducts                controllers.ProductController.listJsonProducts
 
-GET      /searchCatalogue                controllers.ProductController.searchCatalogue(author: String, title: String, productID: String, manufacturer: String)
+GET      /searchCatalogue                controllers.ProductController.searchCatalogue(author: String, title: String, productId: String, manufacturer: String)
 
 GET      /findproduct                     controllers.ProductController.findProduct(attribute: String, filter: String)
 GET      /productreloadtestdata           controllers.ProductController.reloadTestData
