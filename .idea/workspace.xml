@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6974ad34-d27a-46a3-9f3f-72e6f6dee347" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ProductController.scala" afterPath="$PROJECT_DIR$/app/controllers/ProductController.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/compile/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/compile/compile/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/compile/copyResources/$global/streams/out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/products.txt" afterPath="$PROJECT_DIR$/resources/products.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/root.iml" afterPath="$PROJECT_DIR$/.idea/modules/root.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/usertoproducts.txt" afterPath="$PROJECT_DIR$/resources/usertoproducts.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="simple-rest-scala.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,8 +32,8 @@
       <file leaf-file-name="ProductController.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/ProductController.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32177034" vertical-offset="2404" max-vertical-offset="5346">
-              <caret line="121" column="2" selection-start-line="121" selection-start-column="2" selection-end-line="121" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.29066986" vertical-offset="3564" max-vertical-offset="5562">
+              <caret line="163" column="44" selection-start-line="163" selection-start-column="44" selection-end-line="163" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -1105,8 +1098,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ProductController.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32177034" vertical-offset="2404" max-vertical-offset="5346">
-          <caret line="121" column="2" selection-start-line="121" selection-start-column="2" selection-end-line="121" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.29066986" vertical-offset="3564" max-vertical-offset="5562">
+          <caret line="163" column="44" selection-start-line="163" selection-start-column="44" selection-end-line="163" selection-end-column="44" />
           <folding />
         </state>
       </provider>

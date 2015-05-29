@@ -73,7 +73,7 @@ object ProductController  extends Controller with MongoController {
     lOfProductIds
   }
 
-  def getJasonString (lOfProducts: ListBuffer[String]): String = {
+  def getFindMyProductsJasonString (lOfProducts: ListBuffer[String]): String = {
     Logger.info("getJasonString")
     var jsonString = "{ \"$query\":  { \"productId\": { \"$in\": ["
     var index = 1
@@ -95,7 +95,7 @@ object ProductController  extends Controller with MongoController {
     for {
       lOfUserToProducts <- userToProductCollection.find(Json.obj("userId" -> userId)).cursor[UserToProduct].collect[List]()
       lOfProducts = getProductIds(lOfUserToProducts)
-      jsonString = getJasonString (lOfProducts)
+      jsonString = getFindMyProductsJasonString (lOfProducts)
       json = play.api.libs.json.Json.parse(jsonString)
       lOfProducts <- productCollection.find(json).cursor[Product].collect[List]()
     } yield {
@@ -119,13 +119,11 @@ object ProductController  extends Controller with MongoController {
       Ok(Json.toJson(result))
     }
   }
-  
 
-  def searchCatalogue (author: String, title: String, productId: String, manufacturer: String)
-    =  Action.async {
-    Logger.info("ProductController  searchCatalogue")
+  def getSearchParameterMap(author: String, title: String, productId: String, manufacturer: String): mutable.Map[String, String] = {
+    Logger.info("getSearchParamaterMap")
     var index = 0
-    var parameterMap : mutable.Map[String, String] = mutable.Map()
+    val parameterMap : mutable.Map[String, String] = mutable.Map()
     if (author.length > 0 ) {
       parameterMap += ("author" -> author)
       index += 1
@@ -141,8 +139,12 @@ object ProductController  extends Controller with MongoController {
     if (manufacturer.length > 0) {
       parameterMap += ("manufacturer" -> manufacturer)
     }
+    parameterMap
+  }
+
+  def getJsonSearchString (parameterMap: mutable.Map[String, String]) = {
     var jsonString = "{ "
-    index = 0
+    var index = 0
     parameterMap.keys.foreach{ i =>
       Logger.info( "Key = " + i + " Value = " + parameterMap(i))
       jsonString += "\"" + i + "\" : {\"$regex\" : \".*" + parameterMap(i) + ".*\","
@@ -154,7 +156,13 @@ object ProductController  extends Controller with MongoController {
     }
     jsonString += "}"
     Logger.info(jsonString)
-    val json = play.api.libs.json.Json.parse(jsonString)
+    jsonString
+  }
+  def searchCatalogue (author: String, title: String, productId: String, manufacturer: String)
+    =  Action.async {
+    Logger.info("ProductController  searchCatalogue")
+    val parameterMap = getSearchParameterMap(author, title, productId, manufacturer)
+    val json = play.api.libs.json.Json.parse(getJsonSearchString (parameterMap))
     val products: Future[List[Product]] =
       productCollection.find(json).cursor[Product].collect[List]()
     products.map { result =>
