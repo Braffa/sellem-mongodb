@@ -1,7 +1,14 @@
 package controllers
 
-import models.product.Product
+import com.sun.corba.se.spi.ior.ObjectId
+import models.product.{UserToProduct, Product}
 import models.product.ProductJsonFormats.productFormat
+import models.product.UserToProductJsonFormats.userToProductFormat
+
+import scala.collection.immutable.List
+import scala.collection.mutable.ListBuffer
+import scala.collection.mutable.{ListBuffer}
+
 import org.joda.time.DateTime
 import play.api.Logger
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
@@ -10,9 +17,10 @@ import play.api.mvc.{Action, Controller}
 import play.modules.reactivemongo.MongoController
 import play.modules.reactivemongo.json.collection.JSONCollection
 import play.modules.reactivemongo.json._
-import reactivemongo.bson.{BSONRegex, BSONDocument, BSONObjectID}
+import reactivemongo.bson.{BSON, BSONRegex, BSONDocument, BSONObjectID}
 
 import scala.collection.mutable
+import scala.collection.mutable.ListBuffer
 import scala.concurrent.Future
 import scala.io.Source
 
@@ -24,6 +32,8 @@ object ProductController  extends Controller with MongoController {
 
   def productCollection: JSONCollection = db.collection[JSONCollection]("product")
   def userToProductCollection: JSONCollection = db.collection[JSONCollection]("userToProduct")
+
+  def convertDate (strDate: String): DateTime = new DateTime(java.lang.Long.parseLong(strDate))
 
   def setUpProduct: Product = {
     Logger.info("setUpProduct")
@@ -53,6 +63,48 @@ object ProductController  extends Controller with MongoController {
     }
   }
 
+  def getProductIds(lOfUserToProducts: List[UserToProduct]): ListBuffer[String] = {
+    Logger.info("getProductIds")
+    var lOfProductIds = ListBuffer [String]()
+    for(userToProduct <- lOfUserToProducts) {
+      Logger.info(userToProduct.userId + " - " + userToProduct.productId)
+      lOfProductIds += userToProduct.productId
+    }
+    lOfProductIds
+  }
+
+  def getJasonString (lOfProducts: ListBuffer[String]): String = {
+    Logger.info("getJasonString")
+    var jsonString = "{ \"$query\":  { \"productId\": { \"$in\": ["
+    var index = 1
+    lOfProducts.foreach { i =>
+      jsonString += "\"" + i + "\""
+      if (index < lOfProducts.size) {
+        jsonString += ", "
+        index += 1
+      }
+    }
+    jsonString += "] }}, \"$orderby\": { \"author\": 1} } "
+    Logger.info(jsonString)
+    jsonString
+  }
+
+  def findMyProducts(userId: String) = Action.async {
+    Logger.info("findMyProducts userId " + userId)
+    var lOfProducts = ListBuffer [String]()
+    for {
+      lOfUserToProducts <- userToProductCollection.find(Json.obj("userId" -> userId)).cursor[UserToProduct].collect[List]()
+      lOfProducts = getProductIds(lOfUserToProducts)
+      jsonString = getJasonString (lOfProducts)
+      json = play.api.libs.json.Json.parse(jsonString)
+      lOfProducts <- productCollection.find(json).cursor[Product].collect[List]()
+    } yield {
+      Logger.info(""+lOfProducts.size)
+      for (product <- lOfProducts) println(product.toString)
+      Ok(Json.toJson(lOfProducts))
+    }
+  }
+
   def listProducts = Action.async {
     val products: Future[List[Product]] = productCollection.genericQueryBuilder.cursor[Product].collect[List]()
     products.map { result =>
@@ -67,6 +119,7 @@ object ProductController  extends Controller with MongoController {
       Ok(Json.toJson(result))
     }
   }
+  
 
   def searchCatalogue (author: String, title: String, productId: String, manufacturer: String)
     =  Action.async {
@@ -88,23 +141,22 @@ object ProductController  extends Controller with MongoController {
     if (manufacturer.length > 0) {
       parameterMap += ("manufacturer" -> manufacturer)
     }
-    val dq = """ """"
-    var jsonString = "{"
+    var jsonString = "{ "
     index = 0
     parameterMap.keys.foreach{ i =>
       Logger.info( "Key = " + i + " Value = " + parameterMap(i))
-      jsonString = jsonString  + dq + i + """" : {"$regex" : ".*""" + parameterMap(i) + """.*","$options" : "i" }"""
+      jsonString += "\"" + i + "\" : {\"$regex\" : \".*" + parameterMap(i) + ".*\","
+      jsonString += "\"" + "$options" + "\" : \"i\" }"
       index += 1
       if (parameterMap.size > 1 && index < parameterMap.size) {
-        jsonString = jsonString + " , "
+        jsonString += " , "
       }
     }
-    jsonString = jsonString + "}"
+    jsonString += "}"
     Logger.info(jsonString)
     val json = play.api.libs.json.Json.parse(jsonString)
     val products: Future[List[Product]] =
       productCollection.find(json).cursor[Product].collect[List]()
-
     products.map { result =>
       println(Json.toJson(result))
       Ok(Json.toJson(result))

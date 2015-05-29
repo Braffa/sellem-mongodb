@@ -20,6 +20,8 @@ GET      /listJsonProducts                controllers.ProductController.listJson
 GET      /searchCatalogue                controllers.ProductController.searchCatalogue(author: String, title: String, productId: String, manufacturer: String)
 
 GET      /findproduct                     controllers.ProductController.findProduct(attribute: String, filter: String)
+GET      /findmyproducts                  controllers.ProductController.findMyProducts(userId: String)
+
 GET      /productreloadtestdata           controllers.ProductController.reloadTestData
 
 GET      /reloadusertoproducttestdata     controllers.UserToProductController.reloadUserToProductTestData
