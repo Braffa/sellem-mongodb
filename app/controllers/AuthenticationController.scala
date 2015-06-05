@@ -32,21 +32,6 @@ object AuthenticationController extends Controller with MongoController {
     }
   }
 
-  def setUpRegisteredUser: RegisteredUser = {
-    Logger.info("setUpRegisteredUser")
-    val registeredUser = new RegisteredUser (BSONObjectID.generate,
-      "99",
-      "DaveAllan@yah00.co.uk",
-      "Dave,",
-      "Alan,",
-      "password",
-      "01388 898989",
-      "userid8",
-      new DateTime(),
-      new DateTime())
-    registeredUser
-  }
-  //http://localhost:9000/findregistereduser?attribute=userId&filter=userid8
   def findRegisteredUser(attribute: String, filter: String) = Action.async {
     Logger.info("findRegisteredUser")
     val registeredUser: Future[List[RegisteredUser]] = collection.find(Json.obj(attribute -> filter)).cursor[RegisteredUser].collect[List]()
@@ -61,18 +46,29 @@ object AuthenticationController extends Controller with MongoController {
     }
   }
 
-  def saveRegisteredUser = Action {
-    val registeredUser = setUpRegisteredUser
-
+  def registerUser (authorityLevel: String, email: String, firstName: String, lastName: String, password: String, telephone: String, userId: String)
+    = {
+    Logger.info("AuthenticationController  registerUser")
+    val registeredUser = new RegisteredUser (BSONObjectID.generate,
+      authorityLevel,
+      email,
+      firstName,
+      lastName,
+      password,
+      telephone,
+      userId,
+      new DateTime(),
+      new DateTime())
+    Logger.info (registeredUser.toString)
     val futureUpdateLogin = collection.insert(registeredUser)
     futureUpdateLogin.map { result =>
       Logger.info("success " + registeredUser.userId + " has been created")
       Logger.info("**** " + result + "*****")
     }.recover {
-      case e => Logger.error(e.getMessage())
+      case e => Logger.info(e.getMessage())
     }
+    listRegisteredUsers
 
-    Ok("Got Here " + registeredUser.userId)
   }
 
   def listRegisteredUsers = Action.async {

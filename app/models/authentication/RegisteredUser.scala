@@ -16,7 +16,8 @@ case class RegisteredUser (_id: BSONObjectID,
                    crDate: DateTime,
                    updDate: DateTime) {
   override def toString: String = {
-    var p = "Product \n[BSONObjectID  - " + BSONObjectID
+    var p = "\nRegisteredUser "
+    p += "\n[BSONObjectID   - " + BSONObjectID
     p += "\n authorityLevel - " + authorityLevel
     p += "\n email          - " + email
     p += "\n firstName      - " + firstName

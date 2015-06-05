@@ -171,6 +171,36 @@ object ProductController  extends Controller with MongoController {
     }
   }
 
+  def addProduct (author: String, title: String, productid: String, manufacturer: String,
+                  productgroup: String, productidtype: String, productIndex: String, imageURL: String,
+                  imageLargeURL: String, source: String, sourceid: String)
+    = {
+    Logger.info("ProductController  addProduct")
+    val product = new Product (BSONObjectID.generate,
+      author,
+      title,
+      productid,
+      manufacturer,
+      productgroup,
+      productidtype,
+      productIndex,
+      imageURL,
+      imageLargeURL,
+      source,
+      sourceid,
+      new DateTime(),
+      new DateTime())
+    Logger.info(product.toString)
+    val futureUpdateProduct = productCollection.insert(product)
+    futureUpdateProduct.map { result =>
+      Logger.info("success " + product.productId + " has been created")
+      Logger.info("**** " + result + "*****")
+    }.recover {
+      case e => Logger.info(e.getMessage())
+    }
+    listProducts
+  }
+
   def saveProduct = Action {
     Logger.info("saveProduct")
     val product = setUpProduct

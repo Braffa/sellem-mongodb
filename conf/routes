@@ -7,13 +7,15 @@ GET      /                                controllers.Application.home
 GET      /home                            controllers.Application.home
 
 GET      /login                           controllers.AuthenticationController.login(userId: String)
-GET		 /saveregisteredUser			  controllers.AuthenticationController.saveRegisteredUser
+GET      /registerUser                    controllers.AuthenticationController.registerUser(authorityLevel: String, email: String, firstName: String, lastName: String, password: String, telephone: String, userId: String)
 GET		 /listregisteredUsers			  controllers.AuthenticationController.listRegisteredUsers
 GET		 /listJsonregisteredUsers		  controllers.AuthenticationController.listJsonRegisteredUsers
 GET		 /findregistereduser			  controllers.AuthenticationController.findRegisteredUser(attribute: String, filter: String)
 GET      /registeredUserreloadtestdata    controllers.AuthenticationController.reloadTestData
 
 GET      /saveproduct                     controllers.ProductController.saveProduct
+GET      /addproduct                      controllers.ProductController.addProduct(author: String, title: String, productid: String, manufacturer: String, productgroup: String, productidtype: String, productIndex: String, imageURL: String, imageLargeURL: String, source: String, sourceid: String)
+
 GET      /listproducts                    controllers.ProductController.listProducts
 GET      /listJsonProducts                controllers.ProductController.listJsonProducts
 
