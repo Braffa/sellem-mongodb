@@ -36,7 +36,7 @@ object ProductController  extends Controller with MongoController {
   def convertDate (strDate: String): DateTime = new DateTime(java.lang.Long.parseLong(strDate))
 
   def setUpProduct: Product = {
-    Logger.info("setUpProduct")
+    Logger.info("ProductController setUpProduct")
 
     val product = new Product (BSONObjectID.generate,
       "Fleming", //author: String,
@@ -56,7 +56,7 @@ object ProductController  extends Controller with MongoController {
   }
 
   def findProduct(attribute: String, filter: String) = Action.async {
-    Logger.info("findProduct attribute = " + attribute + " filter = " + filter)
+    Logger.info("ProductController findProduct attribute = " + attribute + " filter = " + filter)
     val product: Future[List[Product]] = productCollection.find(Json.obj(attribute -> filter)).cursor[Product].collect[List]()
     product.map { result =>
       Ok(Json.toJson(result))
@@ -64,7 +64,7 @@ object ProductController  extends Controller with MongoController {
   }
 
   def getProductIds(lOfUserToProducts: List[UserToProduct]): ListBuffer[String] = {
-    Logger.info("getProductIds")
+    Logger.info("ProductController getProductIds")
     var lOfProductIds = ListBuffer [String]()
     for(userToProduct <- lOfUserToProducts) {
       Logger.info(userToProduct.userId + " - " + userToProduct.productId)
@@ -74,7 +74,7 @@ object ProductController  extends Controller with MongoController {
   }
 
   def getFindMyProductsJasonString (lOfProducts: ListBuffer[String]): String = {
-    Logger.info("getJasonString")
+    Logger.info("ProductController getJasonString")
     var jsonString = "{ \"$query\":  { \"productId\": { \"$in\": ["
     var index = 1
     lOfProducts.foreach { i =>
@@ -90,7 +90,7 @@ object ProductController  extends Controller with MongoController {
   }
 
   def findMyProducts(userId: String) = Action.async {
-    Logger.info("findMyProducts userId " + userId)
+    Logger.info("ProductController findMyProducts userId " + userId)
     var lOfProducts = ListBuffer [String]()
     for {
       lOfUserToProducts <- userToProductCollection.find(Json.obj("userId" -> userId)).cursor[UserToProduct].collect[List]()
@@ -106,6 +106,7 @@ object ProductController  extends Controller with MongoController {
   }
 
   def listProducts = Action.async {
+    Logger.info("ProductController listProducts")
     val products: Future[List[Product]] = productCollection.genericQueryBuilder.cursor[Product].collect[List]()
     products.map { result =>
       Ok(views.html.listproducts("List of All products")((result)))
@@ -113,7 +114,7 @@ object ProductController  extends Controller with MongoController {
   }
 
   def listJsonProducts = Action.async {
-    Logger.info("listJsonProducts ")
+    Logger.info("ProductController listJsonProducts ")
     val products: Future[List[Product]] = productCollection.genericQueryBuilder.cursor[Product].collect[List]()
     products.map { result =>
       Ok(Json.toJson(result))
@@ -121,7 +122,7 @@ object ProductController  extends Controller with MongoController {
   }
 
   def getSearchParameterMap(author: String, title: String, productId: String, manufacturer: String): mutable.Map[String, String] = {
-    Logger.info("getSearchParamaterMap")
+    Logger.info("ProductController getSearchParamaterMap")
     var index = 0
     val parameterMap : mutable.Map[String, String] = mutable.Map()
     if (author.length > 0 ) {
@@ -143,6 +144,7 @@ object ProductController  extends Controller with MongoController {
   }
 
   def getJsonSearchString (parameterMap: mutable.Map[String, String]) = {
+    Logger.info("ProductController getJsonSearchString")
     var jsonString = "{ "
     var index = 0
     parameterMap.keys.foreach{ i =>
@@ -158,6 +160,7 @@ object ProductController  extends Controller with MongoController {
     Logger.info(jsonString)
     jsonString
   }
+
   def searchCatalogue (author: String, title: String, productId: String, manufacturer: String)
     =  Action.async {
     Logger.info("ProductController  searchCatalogue")
@@ -178,16 +181,16 @@ object ProductController  extends Controller with MongoController {
     Logger.info("ProductController  addProduct")
     val product = new Product (BSONObjectID.generate,
       author,
-      title,
-      productid,
-      manufacturer,
-      productgroup,
-      productidtype,
-      productIndex,
       imageURL,
       imageLargeURL,
+      manufacturer,
+      productIndex,
+      productgroup,
+      productid,
+      productidtype,
       source,
       sourceid,
+      title,
       new DateTime(),
       new DateTime())
     Logger.info(product.toString)
@@ -202,7 +205,7 @@ object ProductController  extends Controller with MongoController {
   }
 
   def saveProduct = Action {
-    Logger.info("saveProduct")
+    Logger.info("ProductController saveProduct")
     val product = setUpProduct
     Logger.info("saveProduct " + product.author)
     Logger.info("saveProduct " + product._id)
@@ -218,7 +221,7 @@ object ProductController  extends Controller with MongoController {
   }
 
   def reloadTestData = {
-    Logger.info("reloadTestData")
+    Logger.info("ProductController reloadTestData")
     productCollection.drop()
     val src = Source.fromFile(".\\resources\\products.txt").getLines
     val headerLine = src.take(1).next
@@ -246,6 +249,18 @@ object ProductController  extends Controller with MongoController {
       Logger.info(product.toString)
       val futureProduct = productCollection.insert(product)
     }
+    listProducts
+  }
+
+  def backUpTestData = {
+    Logger.info("ProductController backUpTestData")
+    val lOfProducts: Future[List[Product]] = productCollection.genericQueryBuilder.cursor[Product].collect[List]()
+    for (product <- lOfProducts) println(product.toString)
+    for(p <- lOfProducts) {
+     // p.delimit
+    }
+
+
     listProducts
   }
 
