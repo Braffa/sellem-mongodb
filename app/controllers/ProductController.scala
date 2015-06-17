@@ -1,13 +1,15 @@
 package controllers
 
-import com.sun.corba.se.spi.ior.ObjectId
+import java.io.{FileWriter, BufferedWriter}
+
 import models.product.{UserToProduct, Product}
 import models.product.ProductJsonFormats.productFormat
 import models.product.UserToProductJsonFormats.userToProductFormat
+import reactivemongo.bson.Producer.valueProducer
+
 
 import scala.collection.immutable.List
-import scala.collection.mutable.ListBuffer
-import scala.collection.mutable.{ListBuffer}
+
 
 import org.joda.time.DateTime
 import play.api.Logger
@@ -34,26 +36,6 @@ object ProductController  extends Controller with MongoController {
   def userToProductCollection: JSONCollection = db.collection[JSONCollection]("userToProduct")
 
   def convertDate (strDate: String): DateTime = new DateTime(java.lang.Long.parseLong(strDate))
-
-  def setUpProduct: Product = {
-    Logger.info("ProductController setUpProduct")
-
-    val product = new Product (BSONObjectID.generate,
-      "Fleming", //author: String,
-      "http://ecx.images-amazon.com/images/I/71Z8j-Y5qAL._SL500_PIsitb-sticker-arrow-big,TopRight,35,-73_SL133_OU02_.jpg", //imageURL: String,
-      "http://ecx.images-amazon.com/images/I/71Z8j-Y5qAL._SL500_PIsitb-sticker-arrow-big,TopRight,35,-73_SL133_OU02_.jpg", //imageLargeURL: String,
-      "chocolate Productions", //manufacturer: String,
-      "0", //productIndex: String,
-      "book", //productgroup: String,
-      "978-1780671062", //productId: String,
-      "ISBN-13", //productidtype: String,
-      "amazon", //source: String,
-      "23", //sourceid: String,
-      "An Inky Treasure Hunt and Colouring ", //title: String,
-      new DateTime(),
-      new DateTime())
-    product
-  }
 
   def findProduct(attribute: String, filter: String) = Action.async {
     Logger.info("ProductController findProduct attribute = " + attribute + " filter = " + filter)
@@ -204,27 +186,10 @@ object ProductController  extends Controller with MongoController {
     listProducts
   }
 
-  def saveProduct = Action {
-    Logger.info("ProductController saveProduct")
-    val product = setUpProduct
-    Logger.info("saveProduct " + product.author)
-    Logger.info("saveProduct " + product._id)
-    val futureProduct = productCollection.insert(product)
-
-    futureProduct.map { result =>
-      Logger.info("success " + product.author + " has been created")
-      Logger.info("**** " + result + "*****")
-    }.recover {
-      case e => Logger.error(e.getMessage())
-    }
-    Ok("Got Here " + product.author)
-  }
-
   def reloadTestData = {
     Logger.info("ProductController reloadTestData")
     productCollection.drop()
     val src = Source.fromFile(".\\resources\\products.txt").getLines
-    val headerLine = src.take(1).next
     for(l <- src) {
       var productElement = new Array[String](11)
       var index = 0
@@ -254,13 +219,18 @@ object ProductController  extends Controller with MongoController {
 
   def backUpTestData = {
     Logger.info("ProductController backUpTestData")
-    val lOfProducts: Future[List[Product]] = productCollection.genericQueryBuilder.cursor[Product].collect[List]()
-    for (product <- lOfProducts) println(product.toString)
-    for(p <- lOfProducts) {
-     // p.delimit
+    import java.io._
+    val file = new File(".\\\\resources\\\\products.txt")
+    val bw = new BufferedWriter(new FileWriter(file))
+    for {
+      lOfProducts <- productCollection.genericQueryBuilder.cursor[Product].collect[List]()
+    } yield {
+      for (product <- lOfProducts) {
+        val rec = product.delimit + "\n"
+        bw.write(rec)
+      }
+      bw.close()
     }
-
-
     listProducts
   }
 

@@ -38,18 +38,16 @@ case class Product (_id: BSONObjectID,
 
   def delimit: String = {
     var p = author
-    p += " ," + imageURL
-    p += " ," + imageLargeURL
-    p += " ," + manufacturer
-    p += " ," + productIndex
-    p += " ," + productgroup
-    p += " ," + productId
-    p += " ," + productidtype
-    p += " ," + source
-    p += " ," + sourceid
-    p += " ," + title
-    p += " ," + crDate
-    p += " ," + updDate
+    p += ", " + imageURL
+    p += ", " + imageLargeURL
+    p += ", " + manufacturer
+    p += ", " + productIndex
+    p += ", " + productgroup
+    p += ", " + productId
+    p += ", " + productidtype
+    p += ", " + source
+    p += ", " + sourceid
+    p += ", " + title
     p
   }
 
